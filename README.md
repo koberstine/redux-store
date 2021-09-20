@@ -24,7 +24,7 @@ Download source files, navigate in console to main project directory, run 'npm i
 
 ## Usage
 
-Navigate in console to main directory of project, run 'npm run develop' to run the application on Local Host. There is a 'build' script in package.json for deployment.
+Navigate in console to main directory of project, run 'npm run start' to run the application on Local Host. The 'start' script in package.json will detect a development environment and use 'start:dev' or a production environment and use 'start:prod' there is also a 'heroku-postbuild' script for deployment to Heroku. Once deployed on Heroku and connected to MongoDB Atlas, use 'heroku run npm run seed' to seed the datatbase.
 
 ## Credits
 
