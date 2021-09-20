@@ -24,11 +24,11 @@ function Detail() {
 
   useEffect(() => {
     // already in global store
-    if (products.length) {
-      setCurrentProduct(products.find(product => product._id === id));
-    } 
+//    if (products.length) {
+//      setCurrentProduct(products.find(product => product._id === id));
+//    } 
     // retrieved from server
-    else if (data) {
+    if (data) {
       dispatch({
         type: UPDATE_PRODUCTS,
         products: data.products
